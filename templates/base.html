@@ -8,8 +8,16 @@
       href="{{ url_for('static', filename='css/stylesheet.css') }}"
     />
     <title>Document</title>
+<head>
+    <title>Website Title</title>
 </head>
 <body>
-    {% block body %} {% endblock %}
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+    {% block body %}{% endblock %}
 </body>
 </html>
